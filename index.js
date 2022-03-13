@@ -11,11 +11,9 @@ window.onload = function() {
 }
 
 function init() {
-    console.log("initialising...");
 }
 
 function update() {
-    console.log("updating...");
 }
 
 function render() {
