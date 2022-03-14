@@ -1,13 +1,18 @@
 let cnv, ctx, loop;
 
 window.onload = function() {
-    cnv = document.getElementById("canvas");
-    ctx = cnv.getContext("2d");
+    prepareCanvas();
+    resizeCanvas();
+    addEventListener('mousemove',mouseMoved);
     init();
     loop = setInterval(() => {
         update();
         render();
     },1000/60);
+}
+
+window.onresize = function() {
+    resizeCanvas();
 }
 
 function init() {
@@ -17,4 +22,7 @@ function update() {
 }
 
 function render() {
+}
+
+function mouseMoved(event) {
 }

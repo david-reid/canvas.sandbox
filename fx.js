@@ -1,3 +1,13 @@
+function prepareCanvas() {
+    document.body.style.margin = 0;
+    document.body.style.padding = 0;
+}
+
+function resizeCanvas() {
+    let cnv = document.getElementById("canvas");
+    cnv.width = window.innerWidth;
+    cnv.height = window.innerHeight;
+}
 
 function fillCanvas(fill) {
     let cnv = document.getElementById("canvas");
