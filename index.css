@@ -1,0 +1,16 @@
+#status {
+    padding:10px;
+    margin-left:30px;
+    position:fixed;
+    color:#fff;
+    font-size:3em;
+    font-family:arial;
+}
+
+
+.label {
+    display:inline-block;
+    width:320px;
+}
+
+

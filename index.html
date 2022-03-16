@@ -1,10 +1,19 @@
 <html>
     <head>
-        <title></title>
+        <title>Collisions</title>
+        <link rel="stylesheet" href="index.css">
         <script src="fx.js"></script>
         <script src="index.js"></script>
     </head>
     <body>
+        <div id="status">
+            <div><span class="label">A is left of B</span>:&nbsp;<span id="ALeftOfB">null</span></div>
+            <div><span class="label">A is Right of B</span>:&nbsp;<span id="ARightOfB">null</span></div>
+            <div><span class="label">A is Above B</span>:&nbsp;<span id="AAboveB">null</span></div>
+            <div><span class="label">A is Below B</span>:&nbsp;<span id="ABelowB">null</span></div>
+            <br/>
+            <div><span class="label">Collision</span>:&nbsp;<span id="collision">null</span></div>
+        </div>
         <canvas id="canvas" width="800" height="800"/>
     </body>
 </html>

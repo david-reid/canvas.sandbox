@@ -36,3 +36,29 @@ function drawCircle(x,y, radius, fill) {
     ctx.fill();
     ctx.restore();
 }
+
+function printText(text, x,y, size,font,color) {
+    let ctx = document.getElementById("canvas").getContext("2d");
+    ctx.fillStyle = color;
+    ctx.font = `${size} ${font}`;
+    ctx.fillText(text,x,y);
+}
+
+function printResults(a,b,c,d) {
+    let collision = !( a || b || c || d);
+    colorLabel("ALeftOfB",a);
+    colorLabel("ARightOfB",b);
+    colorLabel("AAboveB",c);
+    colorLabel("ABelowB",d);
+    colorLabel("collision",collision);
+    document.getElementById("ALeftOfB").innerHTML = a;
+    document.getElementById("ARightOfB").innerHTML = b;
+    document.getElementById("AAboveB").innerHTML = c;
+    document.getElementById("ABelowB").innerHTML = d;
+    document.getElementById("collision").innerHTML = collision;
+}
+
+function colorLabel(id, toggle) {
+    let tag = document.getElementById(id);
+    tag.style.color = ( toggle ) ? "green" : "red";
+}
